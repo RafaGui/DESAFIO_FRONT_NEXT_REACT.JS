@@ -4,6 +4,13 @@ Este projeto está incompleto, minhas habilidades com Next e React estão sendo 
 ## Quando haveram atualizações?
 Em breve, estou estudandos as respectivas tecnologias para completar esse desafio proposto a mim, entretando infelizmente não consegui concluir dentro do tempo previsto : (
 
+## Sobre o projeto
+|Detalhes|
+|---------|
+|A inteface em si não seria muito diferente da exibida na imagem abaixo, seriam realizados alguns ajustes apenas (Como o set dos checkboxes e o posicionamento dos elementos em mobile).|
+|Os cards estão carregando seus dados dinamicamente sob uso de API.|
+|Funcionalidades como filtragem dos produtos não foi implementada.|
+
 ## Sobre o Next.js
 Anteriormente já havia tido um contato raso com o React, o que ajudou bastante enquanto eu pesquisava sobre o next, possuo conhecimento no Express e como disse, acabou sendo mais rápido de absover o Next.
 É um framework excelente e pretendo me aprofundar cada vez mais.
