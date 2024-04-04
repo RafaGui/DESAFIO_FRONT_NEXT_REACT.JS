@@ -1,3 +1,15 @@
+# Olá Visitante!
+Este projeto está incompleto, minhas habilidades com Next e React estão sendo trabalhadas e melhoradas.
+
+## Quando haveram atualizações?
+Em breve, estou estudandos as respectivas tecnologias para completar esse desafio proposto a mim, entretando infelizmente não consegui concluir dentro do tempo previsto : (
+
+## Sobre o Next.js
+Anteriormente já havia tido um contato raso com o React, o que ajudou bastante enquanto eu pesquisava sobre o next, possuo conhecimento no Express e como disse, acabou sendo mais rápido de absover o Next.
+É um framework excelente e pretendo me aprofundar cada vez mais.
+
+![image](https://github.com/RafaGui/desafio_font_next_react/assets/75204221/ba3c62d5-6c3f-4430-9c99-15c5f28e48b9)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
