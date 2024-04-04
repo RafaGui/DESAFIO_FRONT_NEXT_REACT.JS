@@ -1,118 +1,166 @@
-import Image from "next/image";
-import { Inter } from "next/font/google";
+// import Image from "next/image";
+// import { Inter } from "next/font/google";
+// const inter = Inter({ subsets: ["latin"] });
 
-const inter = Inter({ subsets: ["latin"] });
+const nome = "Rafael";
+let idade = 23;
 
-export default function Home() {
+const Topo = () => {
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
-    >
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/pages/index.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700/10 after:dark:from-sky-900 after:dark:via-[#0141ff]/40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
+    <div className="sticky p-7 flex justify-around items-center bg-slate-800">
+      <h1 className="font-bold uppercase text-nowrap text-white">
+        Loja de <span className="font-light">roupa</span>
+      </h1>
+      <div className="max-w-md">
+        <input
+          type="text"
+          id="input"
+          className="pl-2 pt-1 pb-1 w-full rounded-md	outline-none bg-slate-700"
+          placeholder="Pesquisar"
         />
       </div>
+    </div>
+  );
+};
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+export default function Home() {
+  const returnName = () => {
+    return nome;
+  };
+  const products = [
+    {
+      id: 1,
+      name: "Basic Tee",
+      href: "#",
+      imageSrc:
+        "https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg",
+      imageAlt: "Front of men's Basic Tee in black.",
+      price: "$50",
+      color: "Black",
+    },
+    {
+      id: 1,
+      name: "Basic Tee",
+      href: "#",
+      imageSrc:
+        "https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-02.jpg",
+      imageAlt: "Front of men's Basic Tee in black.",
+      price: "$35",
+      color: "Black",
+    },
+    {
+      id: 1,
+      name: "Basic Tee",
+      href: "#",
+      imageSrc:
+        "https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-03.jpg",
+      imageAlt: "Front of men's Basic Tee in black.",
+      price: "$35",
+      color: "Black",
+    },
+    {
+      id: 1,
+      name: "Basic Tee",
+      href: "#",
+      imageSrc:
+        "https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-04.jpg",
+      imageAlt: "Front of men's Basic Tee in black.",
+      price: "$35",
+      color: "Black",
+    },
+    {
+      id: 1,
+      name: "Basic Tee",
+      href: "#",
+      imageSrc:
+        "https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-02.jpg",
+      imageAlt: "Front of men's Basic Tee in black.",
+      price: "$35",
+      color: "Black",
+    },
+  ];
+  //RENDER MAIN
+  return (
+    <>
+      <Topo />
+      <main className="p-4 grid gap-4 grid-cols-4 justify-center">
+        <section>
+          <nav>
+            <ul className="border p-4 col-span-2">
+              <p className="text-lg mb-2">Tipos de Camisas</p>
+              <li>
+                <input type="checkbox" id="input-one" value="n1" />
+                <label for="input-one"> Masculinas</label>
+              </li>
+              <li>
+                <input type="checkbox" id="input-two" value="n1" />
+                <label for="input-two"> Femininas</label>
+              </li>
+            </ul>
+          </nav>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+          <nav>
+            <ul className="border p-4 col-span-2">
+              <p className="text-lg mb-2">Tamanhos</p>
+              <li>
+                <input type="checkbox" id="input-one" value="n1" />
+                <label for="input-one"> P</label>
+              </li>
+              <li>
+                <input type="checkbox" id="input-two" value="n1" />
+                <label for="input-two"> M</label>
+              </li>
+              <li>
+                <input type="checkbox" id="input-two" value="n1" />
+                <label for="input-two"> G</label>
+              </li>
+            </ul>
+          </nav>
+        </section>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Discover and deploy boilerplate example Next.js&nbsp;projects.
-          </p>
-        </a>
+        <section className="border p-3 w-full col-span-3">
+          <div className="text-fuchsia-50">
+            <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+              <h2 className="text-2xl font-bold tracking-tight text-gray-800">
+                Nossas Roupas
+              </h2>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+              <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+                {products.map((product) => (
+                  <div key={product.id} className="group relative">
+                    <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
+                      <img
+                        src={product.imageSrc}
+                        alt={product.imageAlt}
+                        className="h-full w-full object-cover object-center lg:h-full lg:w-full"
+                      />
+                    </div>
+                    <div className="mt-4 flex justify-between">
+                      <div>
+                        <h3 className="text-sm text-gray-700">
+                          <a href={product.href}>
+                            <span
+                              aria-hidden="true"
+                              className="absolute inset-0"
+                            />
+                            {product.name}
+                          </a>
+                        </h3>
+                        <p className="mt-1 text-sm text-gray-500">
+                          {product.color}
+                        </p>
+                      </div>
+                      <p className="text-sm font-medium text-gray-900">
+                        {product.price}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </>
   );
 }
